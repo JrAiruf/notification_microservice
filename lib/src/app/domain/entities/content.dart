@@ -1,8 +1,7 @@
-import 'dart:js';
-
 class Content {
+  Content(this._content);
   String? _content;
 
-  String? getContent() => _content;
   void setContent(String value) => _content = value;
+  String? getContent() => _content;
 }
