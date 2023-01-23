@@ -1,4 +1,4 @@
-import 'package:notifications_microservice/src/app_module.dart';
+import 'package:notifications_microservice/src/app/app_module.dart';
 import 'package:shelf/shelf.dart';
 import 'package:shelf_modular/shelf_modular.dart';
 

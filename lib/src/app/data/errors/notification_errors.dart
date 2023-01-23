@@ -1,0 +1,3 @@
+class NotificationError implements Exception {
+  
+}

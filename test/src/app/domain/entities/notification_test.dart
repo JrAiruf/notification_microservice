@@ -4,7 +4,7 @@ import 'package:test/test.dart';
 
 void main() {
   test('Should representate a notification correctly', () {
-    final notification = Notification(
+    final notification = NotificationEntity(
         "",
         NotificationProperties(
             content: Content("Você recebeu uma nova notificação"),

@@ -5,16 +5,16 @@ class NotificationUsecases {
   NotificationUsecases(NotificationContract? contract) : _contract = contract!;
   final NotificationContract _contract;
 
-  Future<Notification> createNotification(Notification notification) async {
+  Future<NotificationEntity> createNotification(NotificationEntity notification) async {
     return await _contract.createNotification(notification)!;
   }
-  Future<Notification> findNotification(String notificationId) async {
+  Future<NotificationEntity> findNotification(String notificationId) async {
     return await _contract.findNotification(notificationId)!;
   }
-  Future<Notification> saveNotification(Notification notification) async {
+  Future<NotificationEntity> saveNotification(NotificationEntity notification) async {
     return await _contract.saveNotification(notification)!;
   }
-  Future<List<Notification>> getNotifications() async {
+  Future<List<NotificationEntity>> getNotifications() async {
     return await _contract.getNotifications()!;
   }
 
