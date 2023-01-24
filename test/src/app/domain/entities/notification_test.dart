@@ -1,11 +1,11 @@
-import 'package:notifications_microservice/src/app/domain/entities/content.dart';
-import 'package:notifications_microservice/src/app/domain/entities/notification.dart';
+import 'package:notifications_microservice/src/app/core/domain/entities/content.dart';
+import 'package:notifications_microservice/src/app/core/domain/entities/notification.dart';
 import 'package:test/test.dart';
 
 void main() {
   test('Should representate a notification correctly', () {
-    final notification = NotificationEntity(
-        "",
+    final notification = NotificationEntity(notificationId: 
+        "",properties: 
         NotificationProperties(
             content: Content("Você recebeu uma nova notificação"),
             createdAt: DateTime.now(),

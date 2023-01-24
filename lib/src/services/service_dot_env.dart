@@ -1,6 +1,10 @@
 import 'dart:io';
 
 class ServiceDotEnv {
+  ServiceDotEnv() {
+    _init();
+  }
+
   static final _map = {};
 
   _init() {
