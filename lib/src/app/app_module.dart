@@ -1,3 +1,4 @@
+import 'package:notifications_microservice/src/app/core/controllers/notification_controller.dart';
 import 'package:notifications_microservice/src/app/core/modules/initial_module.dart';
 import 'package:shelf_modular/shelf_modular.dart';
 
@@ -6,5 +7,7 @@ class AppModule extends Module {
   List<Bind<Object>> get binds => [...InitialModule.dependencies];
 
   @override
-  List<ModularRoute> get routes => [];
+  List<ModularRoute> get routes => [
+    Route.resource(NotificationController())
+  ];
 }
